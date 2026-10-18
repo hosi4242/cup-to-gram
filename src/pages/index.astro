@@ -74,13 +74,13 @@ const appSchema={'@context':'https://schema.org','@type':'WebApplication',name:'
 import {parseAmount} from '../lib/parse.mjs';
 import {convert} from '../lib/convert.mjs';
 import ingredients from '../data/ingredients.json';
-const input=document.querySelector('#ingredient-search'),grid=document.querySelector('#ingredient-grid'),status=document.querySelector('#search-status'),cards=[...grid.children],noResults=document.querySelector('#no-results'),live=ingredients.filter(x=>x.status==='live');
+const input=document.querySelector<HTMLInputElement>('#ingredient-search')!,grid=document.querySelector<HTMLElement>('#ingredient-grid')!,status=document.querySelector<HTMLElement>('#search-status')!,cards=[...grid.children],noResults=document.querySelector<HTMLElement>('#no-results')!,live=ingredients.filter(x=>x.status==='live');
 function filterIngredients(){const q=input.value.trim().toLowerCase();let shown=0;cards.forEach((card,i)=>{const item=live[i],ok=!q||[item.name,...item.aliases].join(' ').toLowerCase().includes(q);card.classList.toggle('hidden',!ok);if(ok)shown++;});status.textContent=shown+' ingredient'+(shown===1?'':'s')+' found.';noResults.classList.toggle('hidden',shown!==0);}
 input.addEventListener('input',filterIngredients);
 function clearSearch(){input.value='';filterIngredients();input.focus();}
 document.querySelector('#search-clear').addEventListener('click',clearSearch);
 document.querySelector('#reset-search').addEventListener('click',clearSearch);
-const amount=document.querySelector('#calc-amount'),unit=document.querySelector('#calc-unit'),ing=document.querySelector('#calc-ingredient'),sys=document.querySelector('#calc-system'),result=document.querySelector('#calc-result'),detail=document.querySelector('#calc-detail');
+const amount=document.querySelector<HTMLInputElement>('#calc-amount')!,unit=document.querySelector<HTMLSelectElement>('#calc-unit')!,ing=document.querySelector<HTMLSelectElement>('#calc-ingredient')!,sys=document.querySelector<HTMLSelectElement>('#calc-system')!,result=document.querySelector<HTMLElement>('#calc-result')!,detail=document.querySelector<HTMLElement>('#calc-detail')!;
 function update(){try{const n=parseAmount(amount.value);if(n===null||n<=0)throw new Error('Enter an amount greater than zero.');const item=live.find(x=>x.slug===ing.value);if(!item)throw new Error('Choose an ingredient.');const conversion=unit.value==='tablespoon'?'tablespoon-to-grams':unit.value==='teaspoon'?'teaspoon-to-grams':'cup-to-grams';const g=convert({amount:n,ingredient:item,conversion,system:sys.value});result.textContent=new Intl.NumberFormat('en-US',{maximumFractionDigits:2}).format(g)+' g';const amountLabel=unit.value==='tablespoon'?'tbsp':unit.value==='teaspoon'?'tsp':(n===1?'cup':'cups');detail.textContent=n+' '+amountLabel+' of '+item.name+' · '+sys.value+' measures';}catch(e){result.textContent='Check amount';detail.textContent=e.message;}}
 [amount,unit,ing,sys].forEach(el=>el.addEventListener('input',update));
 document.querySelectorAll('.quick-amount').forEach(button=>button.addEventListener('click',()=>{amount.value=button.dataset.amount;update();amount.focus();}));
