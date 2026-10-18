@@ -3,19 +3,19 @@
     "slug": "all-purpose-flour",
     "name": "All-Purpose Flour",
     "category": "flour",
-    "gPerCup": 125,
+    "gPerCup": 120,
     "method": "spooned and leveled",
     "aliases": [
       "plain flour",
       "AP flour"
     ],
     "status": "live",
-    "verified": false,
+    "verified": true,
     "range": [
       115,
       135
     ],
-    "note": "All-purpose flour can compact in its bag. Fluff it first, spoon it gently into a dry measuring cup, then level the top without tapping or pressing. Scooping directly with the cup often adds more flour than a recipe expects. A kitchen scale gives more repeatable results for baking.",
+    "note": "All-purpose flour can compact in its bag. Fluff it first, spoon it gently into a dry measuring cup, then level the top without tapping or pressing. Scooping directly with the cup often adds more flour than a recipe expects. A kitchen scale gives more repeatable results for baking. Reference weight checked against the King Arthur Baking ingredient weight chart; actual weight can still vary with product and measuring technique.",
     "faq": [
       {
         "q": "Why does all-purpose flour weigh differently by cup?",
@@ -30,24 +30,27 @@
       "bread-flour",
       "granulated-sugar",
       "brown-sugar"
-    ]
+    ],
+    "sourceName": "King Arthur Baking Ingredient Weight Chart",
+    "sourceUrl": "https://www.kingarthurbaking.com/learn/ingredient-weight-chart",
+    "sourceChecked": "2026-10-18"
   },
   {
     "slug": "bread-flour",
     "name": "Bread Flour",
     "category": "flour",
-    "gPerCup": 127,
+    "gPerCup": 120,
     "method": "spooned and leveled",
     "aliases": [
       "strong flour"
     ],
     "status": "live",
-    "verified": false,
+    "verified": true,
     "range": [
       117,
       137
     ],
-    "note": "Bread flour is a higher-protein wheat flour used for chewy loaves and pizza dough. Spoon it into the measuring cup and level it rather than packing it down. Milling and storage can change how much fits in a cup, so use the weight in your recipe when available.",
+    "note": "Bread flour is a higher-protein wheat flour used for chewy loaves and pizza dough. Spoon it into the measuring cup and level it rather than packing it down. Milling and storage can change how much fits in a cup, so use the weight in your recipe when available. Reference weight checked against the King Arthur Baking ingredient weight chart; actual weight can still vary with product and measuring technique.",
     "faq": [
       {
         "q": "Why does bread flour weigh differently by cup?",
@@ -62,24 +65,27 @@
       "all-purpose-flour",
       "granulated-sugar",
       "brown-sugar"
-    ]
+    ],
+    "sourceName": "King Arthur Baking Ingredient Weight Chart",
+    "sourceUrl": "https://www.kingarthurbaking.com/learn/ingredient-weight-chart",
+    "sourceChecked": "2026-10-18"
   },
   {
     "slug": "granulated-sugar",
     "name": "Granulated Sugar",
     "category": "sugar",
-    "gPerCup": 200,
+    "gPerCup": 198,
     "method": "level",
     "aliases": [
       "white sugar"
     ],
     "status": "live",
-    "verified": false,
+    "verified": true,
     "range": [
       184,
       216
     ],
-    "note": "Granulated sugar generally settles more consistently than flour, but crystal size and cup shape still matter. Fill a dry measuring cup and level it without pressing the sugar down. For large batches or precise baking ratios, weighing the sugar is the most repeatable approach.",
+    "note": "Granulated sugar generally settles more consistently than flour, but crystal size and cup shape still matter. Fill a dry measuring cup and level it without pressing the sugar down. For large batches or precise baking ratios, weighing the sugar is the most repeatable approach. Reference weight checked against the King Arthur Baking ingredient weight chart; actual weight can still vary with product and measuring technique.",
     "faq": [
       {
         "q": "Why does granulated sugar weigh differently by cup?",
@@ -94,7 +100,10 @@
       "brown-sugar",
       "powdered-sugar",
       "honey"
-    ]
+    ],
+    "sourceName": "King Arthur Baking Ingredient Weight Chart",
+    "sourceUrl": "https://www.kingarthurbaking.com/learn/ingredient-weight-chart",
+    "sourceChecked": "2026-10-18"
   },
   {
     "slug": "brown-sugar",
@@ -107,12 +116,12 @@
       "dark brown sugar"
     ],
     "status": "live",
-    "verified": false,
+    "verified": true,
     "range": [
       196,
       230
     ],
-    "note": "Brown sugar is commonly measured packed because its moist crystals hold their shape. Press it into the cup if your recipe says firmly packed, unless the recipe specifies a loose measure. Moisture level and whether the sugar is light or dark can change the final weight.",
+    "note": "Brown sugar is commonly measured packed because its moist crystals hold their shape. Press it into the cup if your recipe says firmly packed, unless the recipe specifies a loose measure. Moisture level and whether the sugar is light or dark can change the final weight. Reference weight checked against the King Arthur Baking ingredient weight chart; actual weight can still vary with product and measuring technique.",
     "faq": [
       {
         "q": "Why does brown sugar weigh differently by cup?",
@@ -127,25 +136,28 @@
       "granulated-sugar",
       "powdered-sugar",
       "honey"
-    ]
+    ],
+    "sourceName": "King Arthur Baking Ingredient Weight Chart",
+    "sourceUrl": "https://www.kingarthurbaking.com/learn/ingredient-weight-chart",
+    "sourceChecked": "2026-10-18"
   },
   {
     "slug": "powdered-sugar",
     "name": "Powdered Sugar",
     "category": "sugar",
-    "gPerCup": 120,
+    "gPerCup": 113,
     "method": "unsifted and level",
     "aliases": [
       "icing sugar",
       "confectioners sugar"
     ],
     "status": "live",
-    "verified": false,
+    "verified": true,
     "range": [
       110,
       130
     ],
-    "note": "Powdered sugar is finely milled and may contain anti-caking starch. Sifting loosens it and changes how much fits in a cup, so follow the recipe's sifted or unsifted instruction. Weighing is the most consistent option when exact proportions matter.",
+    "note": "Powdered sugar is finely milled and may contain anti-caking starch. Sifting loosens it and changes how much fits in a cup, so follow the recipe's sifted or unsifted instruction. Weighing is the most consistent option when exact proportions matter. Reference weight checked against the King Arthur Baking ingredient weight chart; actual weight can still vary with product and measuring technique.",
     "faq": [
       {
         "q": "Why does powdered sugar weigh differently by cup?",
@@ -160,7 +172,10 @@
       "granulated-sugar",
       "all-purpose-flour",
       "cornstarch"
-    ]
+    ],
+    "sourceName": "King Arthur Baking Ingredient Weight Chart",
+    "sourceUrl": "https://www.kingarthurbaking.com/learn/ingredient-weight-chart",
+    "sourceChecked": "2026-10-18"
   },
   {
     "slug": "butter",
@@ -173,12 +188,12 @@
       "unsalted butter"
     ],
     "status": "live",
-    "verified": false,
+    "verified": true,
     "range": [
       209,
       245
     ],
-    "note": "Butter has a relatively consistent weight and many US wrappers mark tablespoons and cup fractions. One US cup is commonly treated as two standard sticks, about 227 grams. If a recipe specifies melted butter, follow whether the amount is measured before or after melting.",
+    "note": "Butter has a relatively consistent weight and many US wrappers mark tablespoons and cup fractions. One US cup is commonly treated as two standard sticks, about 227 grams. If a recipe specifies melted butter, follow whether the amount is measured before or after melting. Reference weight checked against the King Arthur Baking ingredient weight chart; actual weight can still vary with product and measuring technique.",
     "faq": [
       {
         "q": "Why does butter weigh differently by cup?",
@@ -193,24 +208,27 @@
       "milk",
       "all-purpose-flour",
       "honey"
-    ]
+    ],
+    "sourceName": "King Arthur Baking Ingredient Weight Chart",
+    "sourceUrl": "https://www.kingarthurbaking.com/learn/ingredient-weight-chart",
+    "sourceChecked": "2026-10-18"
   },
   {
     "slug": "honey",
     "name": "Honey",
     "category": "sweeteners",
-    "gPerCup": 340,
+    "gPerCup": 336,
     "method": "level",
     "aliases": [
       "pure honey"
     ],
     "status": "live",
-    "verified": false,
+    "verified": true,
     "range": [
       313,
       367
     ],
-    "note": "Honey is much denser than water, so a cup weighs substantially more than a cup of water. Density varies with temperature and water content. Lightly coat the measuring cup to help honey release, and weigh it when precision matters.",
+    "note": "Honey is much denser than water, so a cup weighs substantially more than a cup of water. Density varies with temperature and water content. Lightly coat the measuring cup to help honey release, and weigh it when precision matters. Reference weight checked against the King Arthur Baking ingredient weight chart; actual weight can still vary with product and measuring technique.",
     "faq": [
       {
         "q": "Why does honey weigh differently by cup?",
@@ -225,24 +243,27 @@
       "granulated-sugar",
       "milk",
       "all-purpose-flour"
-    ]
+    ],
+    "sourceName": "King Arthur Baking Ingredient Weight Chart",
+    "sourceUrl": "https://www.kingarthurbaking.com/learn/ingredient-weight-chart",
+    "sourceChecked": "2026-10-18"
   },
   {
     "slug": "milk",
     "name": "Milk",
     "category": "dairy",
-    "gPerCup": 245,
+    "gPerCup": 227,
     "method": "liquid measuring cup",
     "aliases": [
       "whole milk"
     ],
     "status": "live",
-    "verified": false,
+    "verified": true,
     "range": [
       225,
       265
     ],
-    "note": "Milk weighs slightly more than the same volume of water because it contains dissolved sugars, proteins, fat, and minerals. Use a liquid measuring jug on a level surface and read the line at eye level. Fat content and product formulation can cause small differences.",
+    "note": "Milk weighs slightly more than the same volume of water because it contains dissolved sugars, proteins, fat, and minerals. Use a liquid measuring jug on a level surface and read the line at eye level. Fat content and product formulation can cause small differences. Reference weight checked against the King Arthur Baking ingredient weight chart; actual weight can still vary with product and measuring technique.",
     "faq": [
       {
         "q": "Why does milk weigh differently by cup?",
@@ -257,24 +278,27 @@
       "butter",
       "honey",
       "all-purpose-flour"
-    ]
+    ],
+    "sourceName": "King Arthur Baking Ingredient Weight Chart",
+    "sourceUrl": "https://www.kingarthurbaking.com/learn/ingredient-weight-chart",
+    "sourceChecked": "2026-10-18"
   },
   {
     "slug": "cocoa-powder",
     "name": "Cocoa Powder",
     "category": "baking",
-    "gPerCup": 85,
+    "gPerCup": 84,
     "method": "spooned and leveled",
     "aliases": [
       "unsweetened cocoa"
     ],
     "status": "live",
-    "verified": false,
+    "verified": true,
     "range": [
       78,
       92
     ],
-    "note": "Cocoa powder is light and can compact during storage. Fluff it, spoon it into the measuring cup, and level the surface rather than dipping the cup into the container. Natural and Dutch-process cocoa may differ, so use recipe-specific values when available.",
+    "note": "Cocoa powder is light and can compact during storage. Fluff it, spoon it into the measuring cup, and level the surface rather than dipping the cup into the container. Natural and Dutch-process cocoa may differ, so use recipe-specific values when available. Reference weight checked against the King Arthur Baking ingredient weight chart; actual weight can still vary with product and measuring technique.",
     "faq": [
       {
         "q": "Why does cocoa powder weigh differently by cup?",
@@ -289,24 +313,27 @@
       "all-purpose-flour",
       "powdered-sugar",
       "granulated-sugar"
-    ]
+    ],
+    "sourceName": "King Arthur Baking Ingredient Weight Chart",
+    "sourceUrl": "https://www.kingarthurbaking.com/learn/ingredient-weight-chart",
+    "sourceChecked": "2026-10-18"
   },
   {
     "slug": "rolled-oats",
     "name": "Rolled Oats",
     "category": "grains",
-    "gPerCup": 90,
+    "gPerCup": 89,
     "method": "level",
     "aliases": [
       "old-fashioned oats"
     ],
     "status": "live",
-    "verified": false,
+    "verified": true,
     "range": [
       83,
       97
     ],
-    "note": "Rolled oats contain air spaces between flakes, so cup weight depends on flake size and how the cup is filled. Pour them in loosely and level the top without shaking or pressing them down. Quick oats and steel-cut oats should not automatically use this value.",
+    "note": "Rolled oats contain air spaces between flakes, so cup weight depends on flake size and how the cup is filled. Pour them in loosely and level the top without shaking or pressing them down. Quick oats and steel-cut oats should not automatically use this value. Reference weight checked against the King Arthur Baking ingredient weight chart; actual weight can still vary with product and measuring technique.",
     "faq": [
       {
         "q": "Why does rolled oats weigh differently by cup?",
@@ -321,7 +348,10 @@
       "white-rice",
       "all-purpose-flour",
       "granulated-sugar"
-    ]
+    ],
+    "sourceName": "King Arthur Baking Ingredient Weight Chart",
+    "sourceUrl": "https://www.kingarthurbaking.com/learn/ingredient-weight-chart",
+    "sourceChecked": "2026-10-18"
   },
   {
     "slug": "white-rice",
@@ -338,7 +368,7 @@
       170,
       200
     ],
-    "note": "Uncooked white rice is measured before cooking. Grain length, variety, and how it settles affect the weight in a cup. Fill a dry cup and level the surface without pressing. Do not use this value for cooked rice, which contains absorbed water.",
+    "note": "Uncooked white rice is measured before cooking. Grain length, variety, and how it settles affect the weight in a cup. Fill a dry cup and level the surface without pressing. Do not use this value for cooked rice, which contains absorbed water. This reference value remains provisional and should be checked against a primary ingredient-weight source before being treated as verified.",
     "faq": [
       {
         "q": "Why does white rice (uncooked) weigh differently by cup?",
@@ -353,25 +383,28 @@
       "rolled-oats",
       "all-purpose-flour",
       "cornstarch"
-    ]
+    ],
+    "sourceName": "Pending primary-source verification",
+    "sourceUrl": "",
+    "sourceChecked": ""
   },
   {
     "slug": "cornstarch",
     "name": "Cornstarch",
     "category": "baking",
-    "gPerCup": 128,
+    "gPerCup": 112,
     "method": "spooned and leveled",
     "aliases": [
       "corn starch",
       "US cornflour"
     ],
     "status": "live",
-    "verified": false,
+    "verified": true,
     "range": [
       118,
       138
     ],
-    "note": "Cornstarch is a fine powder that can compact in its container. Stir it gently, spoon it into a cup, and level it without pressing. In some regions cornflour means a different product, so confirm the package is pure corn starch.",
+    "note": "Cornstarch is a fine powder that can compact in its container. Stir it gently, spoon it into a cup, and level it without pressing. In some regions cornflour means a different product, so confirm the package is pure corn starch. Reference weight checked against the King Arthur Baking ingredient weight chart; actual weight can still vary with product and measuring technique.",
     "faq": [
       {
         "q": "Why does cornstarch weigh differently by cup?",
@@ -386,7 +419,10 @@
       "cocoa-powder",
       "all-purpose-flour",
       "powdered-sugar"
-    ]
+    ],
+    "sourceName": "King Arthur Baking Ingredient Weight Chart",
+    "sourceUrl": "https://www.kingarthurbaking.com/learn/ingredient-weight-chart",
+    "sourceChecked": "2026-10-18"
   },
   {
     "slug": "cake-flour",
