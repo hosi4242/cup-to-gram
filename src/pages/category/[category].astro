@@ -5,8 +5,8 @@ import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import ingredients from '../../data/ingredients.json';
 import { absolute } from '../../lib/seo.mjs';
 
-const categories = [...new Set(ingredients.filter((item) => item.status === 'live').map((item) => item.category))];
 export function getStaticPaths() {
+  const categories = [...new Set(ingredients.filter((item) => item.status === 'live').map((item) => item.category))];
   return categories.map((category) => ({ params: { category }, props: { category } }));
 }
 const { category } = Astro.props;
