@@ -1,0 +1,54 @@
+---
+import Base from '../../components/Base.astro';
+import IngredientCard from '../../components/IngredientCard.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import ingredients from '../../data/ingredients.json';
+import { absolute } from '../../lib/seo.mjs';
+
+const live = ingredients.filter((item) => item.status === 'live');
+const categories = [...new Set(live.map((item) => item.category))];
+const categoryDetails = {
+  flour: 'Flour types and spoon-and-level measuring tips.',
+  sugar: 'Granulated, brown, and powdered sugar weights.',
+  dairy: 'Butter, milk, and other dairy measurements.',
+  sweeteners: 'Honey, syrups, and sticky ingredients.',
+  baking: 'Cocoa, starches, and common baking ingredients.',
+  grains: 'Grains and cereal ingredients, with preparation notes.'
+};
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: 'Ingredient Conversion Library',
+  description: 'Browse ingredient-specific cup-to-gram estimates and measurement instructions.',
+  url: absolute('/ingredients/')
+};
+---
+<Base title="Ingredient Conversion Library | CupToGram" description="Browse cup-to-gram conversions by ingredient category. Compare flour, sugar, dairy, sweetener, baking, and grain weights with measurement tips and source status." path="/ingredients/" schema={schema}>
+  <main class="wrap">
+    <Breadcrumbs items={[{ label: 'Ingredients' }]} />
+    <section class="hero">
+      <span class="eyebrow">Ingredient library</span>
+      <h1>Find the right cup-to-gram conversion</h1>
+      <p class="lede">Start with the ingredient, not a generic conversion factor. A cup of flour, sugar, honey, and oats can weigh very different amounts. Browse a category or search for a specific ingredient, then check its measuring method and source status.</p>
+    </section>
+    <section class="section">
+      <h2>Browse by category</h2>
+      <div class="toolgrid">{categories.map((category) => <a class="card" href={`/category/${category}/`}><h3 style="text-transform:capitalize">{category}</h3><p>{categoryDetails[category] ?? `Ingredient conversions for ${category}.`}</p><span class="pill">{live.filter((item) => item.category === category).length} ingredients →</span></a>)}</div>
+    </section>
+    <section class="section">
+      <h2>All available ingredients</h2>
+      <p class="muted">Only published ingredients appear here. Draft entries are kept out of public pages until reviewed.</p>
+      <div class="grid">{live.map((ingredient) => <IngredientCard ingredient={ingredient} />)}</div>
+    </section>
+    <section class="section content">
+      <h2>How to choose a reliable value</h2>
+      <ol>
+        <li>Match the ingredient name and form in your recipe, such as powdered sugar rather than granulated sugar.</li>
+        <li>Follow the page’s measuring method: spooned and leveled, packed, loosely packed, or measured as a liquid.</li>
+        <li>Check the source note. A provisional estimate has not been verified against a primary ingredient-weight source.</li>
+        <li>When accuracy matters, weigh the ingredient in grams and follow the recipe’s own stated weight.</li>
+      </ol>
+      <p><a href="/methodology/">Read the methodology and source policy</a> or use the <a href="/cheat-sheet/">printable kitchen cheat sheet</a>.</p>
+    </section>
+  </main>
+</Base>
