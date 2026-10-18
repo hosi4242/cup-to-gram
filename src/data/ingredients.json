@@ -397,30 +397,30 @@
     "slug": "white-rice",
     "name": "White Rice (Uncooked)",
     "category": "grains",
-    "gPerCup": 185,
-    "method": "level",
+    "gPerCup": 198,
+    "method": "dry and leveled",
     "aliases": [
       "uncooked white rice"
     ],
     "status": "live",
-    "verified": false,
+    "verified": true,
     "range": [
-      170,
-      200
+      190,
+      205
     ],
-    "note": "Uncooked white rice is measured before cooking. Grain length, variety, and how it settles affect the weight in a cup. Fill a dry cup and level the surface without pressing. Do not use this value for cooked rice, which contains absorbed water. This reference value remains provisional and should be checked against a primary ingredient-weight source before being treated as verified.",
+    "note": "Measure uncooked white rice before adding water. The King Arthur Baking ingredient-weight chart lists 1/2 US cup of dry long-grain rice at 99 g, equivalent to about 198 g per US cup. Rice variety, grain length, and how it settles can affect the actual weight. Fill a dry cup and level the surface without pressing the grains. Do not use this value for cooked rice, which contains absorbed water.",
     "faq": [
       {
         "q": "How many grams are in a cup of uncooked white rice?",
-        "a": "This page currently shows a provisional estimate of 185 g per US cup. It has not yet been verified against a primary source by CupToGram, so treat it as a rough guide rather than a confirmed reference."
+        "a": "CupToGram uses about 198 g per US cup as a reference estimate, calculated from the King Arthur Baking chart’s 99 g per 1/2 cup of dry long-grain rice. Other rice varieties may differ, so weigh the rice when precision matters."
       },
       {
         "q": "Does the conversion apply to cooked rice?",
-        "a": "No. Cooking adds water and changes the weight and volume. This entry is for uncooked white rice only; do not use it for cooked rice."
+        "a": "No. Cooking adds water and changes the weight and volume. This entry is for uncooked dry rice only; do not use it for cooked rice."
       },
       {
         "q": "How should I measure uncooked rice?",
-        "a": "Use a level US cup without compressing the grains, and check the rice type named by the recipe. For accuracy, weigh the dry rice and follow the recipe’s specified amount."
+        "a": "Use a dry US cup, fill it without pressing the grains, and level the surface. Check the rice type specified by your recipe; weighing the dry rice gives the most repeatable result."
       }
     ],
     "related": [
@@ -428,9 +428,9 @@
       "all-purpose-flour",
       "cornstarch"
     ],
-    "sourceName": "Pending primary-source verification",
-    "sourceUrl": "",
-    "sourceChecked": ""
+    "sourceName": "King Arthur Baking Ingredient Weight Chart",
+    "sourceUrl": "https://www.kingarthurbaking.com/learn/ingredient-weight-chart",
+    "sourceChecked": "2026-10-18"
   },
   {
     "slug": "cornstarch",
