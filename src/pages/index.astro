@@ -83,7 +83,7 @@ document.querySelector('#reset-search').addEventListener('click',clearSearch);
 const amount=document.querySelector<HTMLInputElement>('#calc-amount')!,unit=document.querySelector<HTMLSelectElement>('#calc-unit')!,ing=document.querySelector<HTMLSelectElement>('#calc-ingredient')!,sys=document.querySelector<HTMLSelectElement>('#calc-system')!,result=document.querySelector<HTMLElement>('#calc-result')!,detail=document.querySelector<HTMLElement>('#calc-detail')!;
 function update(){try{const n=parseAmount(amount.value);if(n===null||n<=0)throw new Error('Enter an amount greater than zero.');const item=live.find(x=>x.slug===ing.value);if(!item)throw new Error('Choose an ingredient.');const conversion=unit.value==='tablespoon'?'tablespoon-to-grams':unit.value==='teaspoon'?'teaspoon-to-grams':'cup-to-grams';const g=convert({amount:n,ingredient:item,conversion,system:sys.value});result.textContent=new Intl.NumberFormat('en-US',{maximumFractionDigits:2}).format(g)+' g';const amountLabel=unit.value==='tablespoon'?'tbsp':unit.value==='teaspoon'?'tsp':(n===1?'cup':'cups');detail.textContent=n+' '+amountLabel+' of '+item.name+' · '+sys.value+' measures';}catch(e){result.textContent='Check amount';detail.textContent=e.message;}}
 [amount,unit,ing,sys].forEach(el=>el.addEventListener('input',update));
-document.querySelectorAll('.quick-amount').forEach(button=>button.addEventListener('click',()=>{amount.value=button.dataset.amount;update();amount.focus();}));
+document.querySelectorAll<HTMLButtonElement>('.quick-amount').forEach(button=>button.addEventListener('click',()=>{amount.value=button.dataset.amount ?? '1';update();amount.focus();}));
 update();
 </script>
 </Base>
