@@ -50,3 +50,7 @@
   .navlinks a{font-size:.88rem}
   button,.button{min-height:44px}
 }
+
+/* Ensure the supporting hero line is visibly smaller than the main headline */
+.hero h1 .hero-title-sub{font-size:calc(1em - 3pt)!important;font-weight:650;color:var(--muted)}
+@media(max-width:760px){.hero h1 .hero-title-sub{font-size:calc(1em - 3pt)!important}}
