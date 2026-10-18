@@ -1,4 +1,101 @@
 ---
-import Base from '../../components/Base.astro';import IngredientCard from '../../components/IngredientCard.astro';import Breadcrumbs from '../../components/Breadcrumbs.astro';import ingredients from '../../data/ingredients.json';const categories=[...new Set(ingredients.filter(i=>i.status==='live').map(i=>i.category))];export function getStaticPaths(){const categories=[...new Set(ingredients.filter(i=>i.status==='live').map(i=>i.category))];return categories.map(category=>({params:{category},props:{category}}));}const {category}=Astro.props;const items=ingredients.filter(i=>i.status==='live'&&i.category===category);
+import Base from '../../components/Base.astro';
+import IngredientCard from '../../components/IngredientCard.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import ingredients from '../../data/ingredients.json';
+import { absolute } from '../../lib/seo.mjs';
+
+const categories = [...new Set(ingredients.filter((item) => item.status === 'live').map((item) => item.category))];
+export function getStaticPaths() {
+  return categories.map((category) => ({ params: { category }, props: { category } }));
+}
+const { category } = Astro.props;
+const items = ingredients.filter((item) => item.status === 'live' && item.category === category);
+const categoryInfo = {
+  flour: {
+    title: 'Flour conversions',
+    intro: 'Flour is one of the ingredients most affected by how a measuring cup is filled. These reference values use a spoon-and-level approach where noted; scooping directly from a bag can compact flour and add extra grams.',
+    tipTitle: 'How to measure flour consistently',
+    tips: ['Loosen the flour in its container before measuring.', 'Spoon flour into a dry measuring cup instead of digging the cup into the bag.', 'Level the top with a straight edge without tapping or pressing.', 'Use the gram amount in your recipe whenever one is provided.'],
+    related: 'how-to-measure-flour'
+  },
+  sugar: {
+    title: 'Sugar conversions',
+    intro: 'Granulated, brown, and powdered sugar do not share the same cup weight. Crystal size, moisture, and whether the sugar is packed or sifted change how much fits into a measuring cup.',
+    tipTitle: 'Choose the right sugar method',
+    tips: ['Level granulated sugar without pressing it down.', 'Pack brown sugar only when the recipe calls for packed brown sugar.', 'Check whether powdered sugar should be sifted before or after measuring.', 'For consistent baking, use the recipe’s gram weight when available.'],
+    related: 'packed-vs-loose-brown-sugar'
+  },
+  dairy: {
+    title: 'Dairy conversions',
+    intro: 'Dairy ingredients include liquids and solids, so the best measuring method depends on the ingredient. Butter may have marked portions on its wrapper, while milk is easiest to read in a liquid measuring jug.',
+    tipTitle: 'Measure dairy with less guesswork',
+    tips: ['Use a liquid measuring jug for milk and read the line at eye level.', 'For butter, check package markings or weigh it on a scale.', 'Follow recipe instructions for softened versus melted butter.', 'Do not assume every dairy product weighs exactly the same as water by volume.'],
+    related: 'butter-conversions'
+  },
+  sweeteners: {
+    title: 'Liquid sweetener conversions',
+    intro: 'Honey and syrups are denser than water, so a cup can weigh much more than a cup of a thin liquid. Temperature and the product’s water content can also affect how easily a sweetener pours.',
+    tipTitle: 'Measure sticky sweeteners',
+    tips: ['Use the exact ingredient named in the recipe; honey and maple syrup are not interchangeable by weight.', 'A lightly oiled measuring cup can help sticky ingredients release.', 'For repeatable results, weigh the container before and after pouring.', 'Treat unverified values as estimates until their source status changes.'],
+    related: 'liquids-ml-grams'
+  },
+  baking: {
+    title: 'Baking ingredient conversions',
+    intro: 'Cocoa, starches, and other baking ingredients vary in density and texture. Fine powders can settle or compact, while small amounts of leavening agents are especially sensitive to measuring errors.',
+    tipTitle: 'Measure baking powders and fine ingredients',
+    tips: ['Fluff fine powders and spoon them into a dry cup where appropriate.', 'Level measuring spoons for baking powder or baking soda rather than heaping them.', 'Do not substitute baking soda for baking powder in equal amounts.', 'Use a scale when a recipe gives a gram weight or precision matters.'],
+    related: 'baking-powder-soda'
+  },
+  grains: {
+    title: 'Grain conversions',
+    intro: 'Grains and cereal ingredients can vary depending on whether they are whole, rolled, ground, dry, or cooked. Always match the state named in the recipe before applying a cup-to-gram estimate.',
+    tipTitle: 'Check the grain and its preparation',
+    tips: ['Confirm whether the recipe means dry or cooked grains.', 'Level dry ingredients in the cup instead of compressing them.', 'Use the same grain type and preparation as the reference value.', 'Check the source-status note on each ingredient page before relying on an estimate.'],
+    related: 'common-conversion-mistakes'
+  }
+};
+const info = categoryInfo[category] ?? {
+  title: `${category[0].toUpperCase() + category.slice(1)} conversions`,
+  intro: `Browse ingredient-specific volume-to-weight estimates for ${category}. Values depend on ingredient type, preparation, and measuring technique.`,
+  tipTitle: 'How to use these estimates',
+  tips: ['Match the ingredient and preparation described by the recipe.', 'Use a level cup or spoon unless the recipe specifies another method.', 'Prefer a kitchen scale when the recipe provides gram measurements.', 'Check each ingredient page for its source and verification status.'],
+  related: 'grams-vs-cups'
+};
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: absolute('/') },
+    { '@type': 'ListItem', position: 2, name: 'Ingredients', item: absolute('/ingredients/') },
+    { '@type': 'ListItem', position: 3, name: info.title, item: absolute(`/category/${category}/`) }
+  ]
+};
 ---
-<Base title={`${category[0].toUpperCase()+category.slice(1)} Conversions | CupToGram`} description={`Browse ingredient-specific cup-to-gram conversions for ${category} and baking recipes.`} path={`/category/${category}/`}><main class="wrap"><Breadcrumbs items={[{label:category[0].toUpperCase()+category.slice(1)}]}/><section class="hero"><span class="eyebrow">Ingredient category</span><h1>{category[0].toUpperCase()+category.slice(1)} conversions</h1><p class="lede">Compare practical cup-to-gram estimates for {category} ingredients. Values depend on preparation and measuring method.</p></section><div class="grid">{items.map(ingredient=><IngredientCard ingredient={ingredient}/>)}</div></main></Base>
+<Base title={`${info.title} | CupToGram`} description={info.intro.slice(0, 155)} path={`/category/${category}/`} schema={breadcrumbSchema}>
+  <main class="wrap">
+    <Breadcrumbs items={[{ label: 'Ingredients', href: '/ingredients/' }, { label: info.title }]} />
+    <section class="hero">
+      <span class="eyebrow">Ingredient category · {items.length} references</span>
+      <h1>{info.title}</h1>
+      <p class="lede">{info.intro}</p>
+    </section>
+    <section class="section">
+      <div class="sectionhead"><h2>Browse {category} ingredients</h2><span class="muted small">US cup estimates unless noted</span></div>
+      <div class="grid">{items.map((ingredient) => <IngredientCard ingredient={ingredient} />)}</div>
+    </section>
+    <section class="section content">
+      <h2>{info.tipTitle}</h2>
+      <ul>{info.tips.map((tip) => <li>{tip}</li>)}</ul>
+      <p>These values are practical reference estimates, not universal constants. Brand, moisture, particle size, and preparation can change the result. If a recipe supplies a gram weight, follow that value instead of converting from volume.</p>
+      <p><a href="/methodology/">Read how CupToGram checks reference values</a> · <a href={`/guides/${info.related}/`}>Read a related measurement guide</a> · <a href="/cheat-sheet/">Open the printable conversion chart</a></p>
+    </section>
+    <section class="section faq">
+      <h2>Frequently asked questions</h2>
+      <details><summary>Are all cups the same size?</summary><p>No. A US customary cup is about 236.6 ml, while a metric cup is commonly 250 ml. Australian tablespoons also differ from US tablespoons. Check the recipe’s region and the selected measuring system.</p></details>
+      <details><summary>Why can two sources give different gram weights?</summary><p>Sources may use different ingredient brands, cup sizes, packing methods, or preparation states. CupToGram displays the source status and measuring method so you can judge the estimate rather than treating it as an exact constant.</p></details>
+      <details><summary>Which value should I use for baking?</summary><p>Use the gram weight stated in the recipe when available. Otherwise, choose the matching ingredient page, follow its measuring method, and use a digital scale for the most repeatable result.</p></details>
+    </section>
+    <p class="small muted">Ingredient reference values and verification notes are maintained individually. Unverified entries are labeled as provisional.</p>
+  </main>
+</Base>
