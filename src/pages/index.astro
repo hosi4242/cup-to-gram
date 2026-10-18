@@ -13,6 +13,8 @@ const live=ingredients.filter(i=>i.status==='live');const categories=[...new Set
 <section class="section content"><h2>Why ingredient-specific weights matter</h2><p>A cup measures volume, while grams measure weight. A cup of flour does not weigh the same as a cup of honey or sugar. Even the same ingredient can vary with particle size, moisture, and how it is packed. Use these values as practical estimates, and choose a kitchen scale when precision is important.</p></section></main>
 <script>
 // @ts-nocheck
+
+// @ts-nocheck
 import {parseAmount} from '../lib/parse.mjs';import {convert} from '../lib/convert.mjs';import ingredients from '../data/ingredients.json';
 const input=document.querySelector('#ingredient-search'),grid=document.querySelector('#ingredient-grid'),status=document.querySelector('#search-status'),cards=[...grid.children],live=ingredients.filter(x=>x.status==='live');
 input.addEventListener('input',()=>{const q=input.value.trim().toLowerCase();let shown=0;cards.forEach((card,i)=>{const item=live[i],ok=!q||[item.name,...item.aliases].join(' ').toLowerCase().includes(q);card.classList.toggle('hidden',!ok);if(ok)shown++;});status.textContent=shown+' ingredient'+(shown===1?'':'s')+' found.';});
