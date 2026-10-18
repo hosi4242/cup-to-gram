@@ -54,3 +54,8 @@
 /* Ensure the supporting hero line is visibly smaller than the main headline */
 .hero h1 .hero-title-sub{font-size:calc(1em - 3pt)!important;font-weight:650;color:var(--muted)}
 @media(max-width:760px){.hero h1 .hero-title-sub{font-size:calc(1em - 3pt)!important}}
+
+/* Make supporting hero line unmistakably smaller; applies on desktop and mobile */
+.hero h1 .hero-title-main{font-size:1em!important}
+.hero h1 .hero-title-sub{display:inline-block!important;font-size:clamp(1.55rem,4.4vw,3.1rem)!important;line-height:1.15!important;font-weight:650!important;color:var(--muted)!important}
+@media(max-width:480px){.hero h1 .hero-title-sub{font-size:clamp(1.45rem,7.2vw,2.05rem)!important}}
