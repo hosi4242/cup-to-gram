@@ -18,12 +18,16 @@
     "note": "All-purpose flour can compact in its bag. Fluff it first, spoon it gently into a dry measuring cup, then level the top without tapping or pressing. Scooping directly with the cup often adds more flour than a recipe expects. A kitchen scale gives more repeatable results for baking. Reference weight checked against the King Arthur Baking ingredient weight chart; actual weight can still vary with product and measuring technique.",
     "faq": [
       {
-        "q": "Why does all-purpose flour weigh differently by cup?",
-        "a": "Brand, particle size, moisture, and how the cup is filled can change the result."
+        "q": "How many grams are in 1 US cup of all-purpose flour?",
+        "a": "CupToGram uses about 120 g for one US cup when the flour is spooned into the cup and leveled. Scooping directly from the bag can pack in more flour, so this estimate depends on the stated method."
       },
       {
-        "q": "Should I use a kitchen scale?",
-        "a": "Yes, a scale is the most repeatable option when baking precision matters."
+        "q": "Should I scoop flour straight from the bag?",
+        "a": "It is better to loosen the flour first, spoon it into a dry cup, and level the top without tapping. Scooping with the cup can compact the flour and make the measurement heavier."
+      },
+      {
+        "q": "Can I use this conversion for every flour?",
+        "a": "No. Cake flour, whole-wheat flour, almond flour, and other types have different textures and reference weights. Select the exact flour named in the recipe."
       }
     ],
     "related": [
@@ -53,12 +57,16 @@
     "note": "Bread flour is a higher-protein wheat flour used for chewy loaves and pizza dough. Spoon it into the measuring cup and level it rather than packing it down. Milling and storage can change how much fits in a cup, so use the weight in your recipe when available. Reference weight checked against the King Arthur Baking ingredient weight chart; actual weight can still vary with product and measuring technique.",
     "faq": [
       {
-        "q": "Why does bread flour weigh differently by cup?",
-        "a": "Brand, particle size, moisture, and how the cup is filled can change the result."
+        "q": "How many grams are in a cup of bread flour?",
+        "a": "The current reference is about 120 g per US cup when spooned and leveled. Use the gram weight in your recipe if it gives one, because milling and measuring technique can change the result."
       },
       {
-        "q": "Should I use a kitchen scale?",
-        "a": "Yes, a scale is the most repeatable option when baking precision matters."
+        "q": "Can I measure bread flour by scooping?",
+        "a": "Scooping directly from the bag may compact the flour. For a more consistent volume measure, loosen it, spoon it into the cup, and level the excess."
+      },
+      {
+        "q": "Is bread flour the same as all-purpose flour by weight?",
+        "a": "Their reference cup weights may be similar, but the flours have different protein characteristics and are not interchangeable in every recipe. Follow the recipe’s specified flour type."
       }
     ],
     "related": [
@@ -88,12 +96,16 @@
     "note": "Granulated sugar generally settles more consistently than flour, but crystal size and cup shape still matter. Fill a dry measuring cup and level it without pressing the sugar down. For large batches or precise baking ratios, weighing the sugar is the most repeatable approach. Reference weight checked against the King Arthur Baking ingredient weight chart; actual weight can still vary with product and measuring technique.",
     "faq": [
       {
-        "q": "Why does granulated sugar weigh differently by cup?",
-        "a": "Brand, particle size, moisture, and how the cup is filled can change the result."
+        "q": "How many grams are in 1 cup of granulated sugar?",
+        "a": "CupToGram’s reference is about 198 g per US cup. Fill a dry measuring cup and level the top without pressing the sugar down."
       },
       {
-        "q": "Should I use a kitchen scale?",
-        "a": "Yes, a scale is the most repeatable option when baking precision matters."
+        "q": "Should granulated sugar be packed into the cup?",
+        "a": "Usually it should be leveled rather than packed unless the recipe says otherwise. Pressing or shaking the cup can change how much sugar fits."
+      },
+      {
+        "q": "Can I use this weight for brown or powdered sugar?",
+        "a": "No. Brown sugar is often measured packed, while powdered sugar is much lighter by volume. Choose the specific sugar page for the recipe ingredient."
       }
     ],
     "related": [
@@ -124,12 +136,16 @@
     "note": "Brown sugar is commonly measured packed because its moist crystals hold their shape. Press it into the cup if your recipe says firmly packed, unless the recipe specifies a loose measure. Moisture level and whether the sugar is light or dark can change the final weight. Reference weight checked against the King Arthur Baking ingredient weight chart; actual weight can still vary with product and measuring technique.",
     "faq": [
       {
-        "q": "Why does brown sugar weigh differently by cup?",
-        "a": "Brand, particle size, moisture, and how the cup is filled can change the result."
+        "q": "How many grams are in a cup of brown sugar?",
+        "a": "The reference shown here is about 213 g per US cup when packed. Moisture and how firmly it is packed can change the weight."
       },
       {
-        "q": "Should I use a kitchen scale?",
-        "a": "Yes, a scale is the most repeatable option when baking precision matters."
+        "q": "What does packed brown sugar mean?",
+        "a": "Press the brown sugar into the measuring cup so it holds the cup’s shape when turned out, if the recipe calls for packed sugar. Do not assume packed and loose measurements are equivalent."
+      },
+      {
+        "q": "Can light and dark brown sugar weigh differently?",
+        "a": "They can differ with moisture, product formulation, and packing. Use the exact recipe instruction and weigh the ingredient when repeatability matters."
       }
     ],
     "related": [
@@ -160,12 +176,16 @@
     "note": "Powdered sugar is finely milled and may contain anti-caking starch. Sifting loosens it and changes how much fits in a cup, so follow the recipe's sifted or unsifted instruction. Weighing is the most consistent option when exact proportions matter. Reference weight checked against the King Arthur Baking ingredient weight chart; actual weight can still vary with product and measuring technique.",
     "faq": [
       {
-        "q": "Why does powdered sugar weigh differently by cup?",
-        "a": "Brand, particle size, moisture, and how the cup is filled can change the result."
+        "q": "How many grams are in a cup of powdered sugar?",
+        "a": "The reference on this page is about 113 g per US cup, measured unsifted and leveled. Sifting changes how loosely the powder sits in the cup."
       },
       {
-        "q": "Should I use a kitchen scale?",
-        "a": "Yes, a scale is the most repeatable option when baking precision matters."
+        "q": "Should powdered sugar be sifted before measuring?",
+        "a": "Follow the recipe wording. '1 cup sifted powdered sugar' generally means sift first and then measure; '1 cup powdered sugar, sifted' may mean measure before sifting."
+      },
+      {
+        "q": "Can powdered sugar replace granulated sugar cup for cup?",
+        "a": "Not reliably. Their textures, weights, and effects on a recipe differ. Use the type and amount specified by the recipe."
       }
     ],
     "related": [
@@ -196,12 +216,16 @@
     "note": "Butter has a relatively consistent weight and many US wrappers mark tablespoons and cup fractions. One US cup is commonly treated as two standard sticks, about 227 grams. If a recipe specifies melted butter, follow whether the amount is measured before or after melting. Reference weight checked against the King Arthur Baking ingredient weight chart; actual weight can still vary with product and measuring technique.",
     "faq": [
       {
-        "q": "Why does butter weigh differently by cup?",
-        "a": "Brand, particle size, moisture, and how the cup is filled can change the result."
+        "q": "How many grams are in 1 US cup of butter?",
+        "a": "The reference is about 227 g per US cup, commonly equivalent to two standard US sticks. Package sizes and markings can differ by country."
       },
       {
-        "q": "Should I use a kitchen scale?",
-        "a": "Yes, a scale is the most repeatable option when baking precision matters."
+        "q": "Is melted butter measured before or after melting?",
+        "a": "Follow the recipe wording. A recipe may mean a measured amount of solid butter that is then melted, or a measured volume of melted butter; those instructions should not be assumed identical."
+      },
+      {
+        "q": "What is the easiest way to measure butter?",
+        "a": "Use the package’s tablespoon or cup markings when available, or weigh it on a kitchen scale. A scale is especially helpful when the recipe gives grams."
       }
     ],
     "related": [
@@ -231,12 +255,16 @@
     "note": "Honey is much denser than water, so a cup weighs substantially more than a cup of water. Density varies with temperature and water content. Lightly coat the measuring cup to help honey release, and weigh it when precision matters. Reference weight checked against the King Arthur Baking ingredient weight chart; actual weight can still vary with product and measuring technique.",
     "faq": [
       {
-        "q": "Why does honey weigh differently by cup?",
-        "a": "Brand, particle size, moisture, and how the cup is filled can change the result."
+        "q": "How many grams are in a cup of honey?",
+        "a": "CupToGram’s reference is about 336 g per US cup. Honey is denser than water, so it weighs substantially more than the same volume of water."
       },
       {
-        "q": "Should I use a kitchen scale?",
-        "a": "Yes, a scale is the most repeatable option when baking precision matters."
+        "q": "How can I stop honey sticking to the measuring cup?",
+        "a": "A lightly coated measuring cup or spoon can help honey release. For a repeatable amount, weighing the honey is often easier than judging the volume after it sticks to the utensil."
+      },
+      {
+        "q": "Can I use the honey conversion for maple syrup?",
+        "a": "Not automatically. Honey and maple syrup have different densities and product characteristics. Use the matching ingredient page and check its verification status."
       }
     ],
     "related": [
@@ -266,12 +294,16 @@
     "note": "Milk weighs slightly more than the same volume of water because it contains dissolved sugars, proteins, fat, and minerals. Use a liquid measuring jug on a level surface and read the line at eye level. Fat content and product formulation can cause small differences. Reference weight checked against the King Arthur Baking ingredient weight chart; actual weight can still vary with product and measuring technique.",
     "faq": [
       {
-        "q": "Why does milk weigh differently by cup?",
-        "a": "Brand, particle size, moisture, and how the cup is filled can change the result."
+        "q": "How many grams are in a US cup of milk?",
+        "a": "The reference is about 227 g per US cup. The exact mass can vary slightly with fat content and product formulation."
       },
       {
-        "q": "Should I use a kitchen scale?",
-        "a": "Yes, a scale is the most repeatable option when baking precision matters."
+        "q": "Should milk be measured in a dry or liquid cup?",
+        "a": "Use a liquid measuring jug on a level surface and read the line at eye level. For the most repeatable gram amount, weigh the milk if your recipe provides a weight."
+      },
+      {
+        "q": "Is 1 ml of milk exactly 1 gram?",
+        "a": "Not exactly. Milliliters measure volume and grams measure mass; milk is slightly different from water and can vary by formulation."
       }
     ],
     "related": [
@@ -301,12 +333,16 @@
     "note": "Cocoa powder is light and can compact during storage. Fluff it, spoon it into the measuring cup, and level the surface rather than dipping the cup into the container. Natural and Dutch-process cocoa may differ, so use recipe-specific values when available. Reference weight checked against the King Arthur Baking ingredient weight chart; actual weight can still vary with product and measuring technique.",
     "faq": [
       {
-        "q": "Why does cocoa powder weigh differently by cup?",
-        "a": "Brand, particle size, moisture, and how the cup is filled can change the result."
+        "q": "How many grams are in a cup of cocoa powder?",
+        "a": "The reference shown is about 84 g per US cup when spooned and leveled. Cocoa powder can settle or compact, so the method matters."
       },
       {
-        "q": "Should I use a kitchen scale?",
-        "a": "Yes, a scale is the most repeatable option when baking precision matters."
+        "q": "Should cocoa powder be packed into the cup?",
+        "a": "Generally, spoon it gently into a dry measuring cup and level it unless your recipe specifies another method. Avoid pressing it down."
+      },
+      {
+        "q": "Can cocoa powder be measured like flour?",
+        "a": "The same spoon-and-level approach can help, but cocoa powder has its own reference weight. Do not use the flour conversion factor for cocoa."
       }
     ],
     "related": [
@@ -336,12 +372,16 @@
     "note": "Rolled oats contain air spaces between flakes, so cup weight depends on flake size and how the cup is filled. Pour them in loosely and level the top without shaking or pressing them down. Quick oats and steel-cut oats should not automatically use this value. Reference weight checked against the King Arthur Baking ingredient weight chart; actual weight can still vary with product and measuring technique.",
     "faq": [
       {
-        "q": "Why does rolled oats weigh differently by cup?",
-        "a": "Brand, particle size, moisture, and how the cup is filled can change the result."
+        "q": "How many grams are in a cup of rolled oats?",
+        "a": "The reference is about 89 g per US cup for old-fashioned or rolled oats. Oat shape, brand, and whether the cup is shaken or compressed can affect the result."
       },
       {
-        "q": "Should I use a kitchen scale?",
-        "a": "Yes, a scale is the most repeatable option when baking precision matters."
+        "q": "Should rolled oats be pressed into the cup?",
+        "a": "Usually no. Add them to the cup without deliberately compressing them, then level the top. Weighing is more repeatable for baking."
+      },
+      {
+        "q": "Can I use this value for oat flour or cooked oats?",
+        "a": "No. Ground oat flour and cooked oats have different volume-to-weight relationships. Match the ingredient form in the recipe."
       }
     ],
     "related": [
@@ -371,12 +411,16 @@
     "note": "Uncooked white rice is measured before cooking. Grain length, variety, and how it settles affect the weight in a cup. Fill a dry cup and level the surface without pressing. Do not use this value for cooked rice, which contains absorbed water. This reference value remains provisional and should be checked against a primary ingredient-weight source before being treated as verified.",
     "faq": [
       {
-        "q": "Why does white rice (uncooked) weigh differently by cup?",
-        "a": "Brand, particle size, moisture, and how the cup is filled can change the result."
+        "q": "How many grams are in a cup of uncooked white rice?",
+        "a": "This page currently shows a provisional estimate of 185 g per US cup. It has not yet been verified against a primary source by CupToGram, so treat it as a rough guide rather than a confirmed reference."
       },
       {
-        "q": "Should I use a kitchen scale?",
-        "a": "Yes, a scale is the most repeatable option when baking precision matters."
+        "q": "Does the conversion apply to cooked rice?",
+        "a": "No. Cooking adds water and changes the weight and volume. This entry is for uncooked white rice only; do not use it for cooked rice."
+      },
+      {
+        "q": "How should I measure uncooked rice?",
+        "a": "Use a level US cup without compressing the grains, and check the rice type named by the recipe. For accuracy, weigh the dry rice and follow the recipe’s specified amount."
       }
     ],
     "related": [
@@ -407,12 +451,16 @@
     "note": "Cornstarch is a fine powder that can compact in its container. Stir it gently, spoon it into a cup, and level it without pressing. In some regions cornflour means a different product, so confirm the package is pure corn starch. Reference weight checked against the King Arthur Baking ingredient weight chart; actual weight can still vary with product and measuring technique.",
     "faq": [
       {
-        "q": "Why does cornstarch weigh differently by cup?",
-        "a": "Brand, particle size, moisture, and how the cup is filled can change the result."
+        "q": "How many grams are in a cup of cornstarch?",
+        "a": "The reference is about 112 g per US cup when spooned and leveled. Fine starch can compact, so avoid scooping and pressing it into the cup."
       },
       {
-        "q": "Should I use a kitchen scale?",
-        "a": "Yes, a scale is the most repeatable option when baking precision matters."
+        "q": "Is cornstarch the same as cornflour?",
+        "a": "Terminology varies by country. In US usage, cornstarch is the fine starch used for thickening; in some other regions, 'cornflour' may mean a different milled corn product. Check the recipe and package."
+      },
+      {
+        "q": "Can cornstarch be measured like all-purpose flour?",
+        "a": "The spoon-and-level technique can help, but cornstarch has a different reference weight. Use the cornstarch conversion rather than the flour value."
       }
     ],
     "related": [
@@ -442,12 +490,16 @@
     "note": "Cake flour is finely milled and often used for tender cakes. Its weight per cup depends on how it settles and whether it is sifted before measuring. Until this entry is verified against a consistent reference, use the gram value as a provisional estimate and weigh the flour when the recipe is sensitive to texture.",
     "faq": [
       {
-        "q": "Why can cake flour weigh differently by cup?",
-        "a": "Particle size, moisture, brand, and measuring technique can change the amount in a cup."
+        "q": "How many grams are in a cup of cake flour?",
+        "a": "The current 114 g value is provisional and has not been verified against a primary source. Treat it as an estimate and use a recipe-specified gram weight where available."
       },
       {
-        "q": "Should I use this value as an exact measurement?",
-        "a": "No. This draft value needs source verification; weigh the ingredient when accuracy matters."
+        "q": "Can I replace cake flour with all-purpose flour using the same cup weight?",
+        "a": "Not automatically. Cake flour has different protein characteristics and may be measured at a different reference weight. Follow the recipe’s specified flour type."
+      },
+      {
+        "q": "How should I measure cake flour by volume?",
+        "a": "Loosen the flour, spoon it into a dry measuring cup, and level without pressing. This technique helps reduce compaction but does not make an unverified weight exact."
       }
     ],
     "related": [
@@ -474,12 +526,16 @@
     "note": "Whole wheat flour contains bran and germ, which affect its texture and how it settles in a measuring cup. Loosen the flour, spoon it gently into the cup, and level without pressing. Brand and grind can change the weight, so treat this value as provisional until source-checked.",
     "faq": [
       {
-        "q": "Why can whole wheat flour weigh differently by cup?",
-        "a": "Particle size, moisture, brand, and measuring technique can change the amount in a cup."
+        "q": "How many grams are in a cup of whole-wheat flour?",
+        "a": "The 120 g value on this page is provisional and has not been verified against a primary source. Use it only as a rough estimate until the source review is complete."
       },
       {
-        "q": "Should I use this value as an exact measurement?",
-        "a": "No. This draft value needs source verification; weigh the ingredient when accuracy matters."
+        "q": "Does whole-wheat flour measure like all-purpose flour?",
+        "a": "Not necessarily. Bran content, milling, and particle size affect how flour settles in a cup. Choose the flour type named in the recipe."
+      },
+      {
+        "q": "What is the best way to measure whole-wheat flour?",
+        "a": "Fluff the flour, spoon it into a dry cup, and level it without packing. For consistent baking, use the recipe’s gram weight or weigh it on a scale."
       }
     ],
     "related": [
