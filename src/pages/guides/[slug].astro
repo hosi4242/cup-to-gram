@@ -1,6 +1,105 @@
 ---
-import Base from '../../components/Base.astro';import {guides} from '../../data/guides.mjs';
-export function getStaticPaths(){return guides.map(guide=>({params:{slug:guide.slug},props:{guide}}));}
-const {guide}=Astro.props;
+import Base from '../../components/Base.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import { guides } from '../../data/guides.mjs';
+import { absolute } from '../../lib/seo.mjs';
+
+export function getStaticPaths() {
+  return guides.map((guide) => ({ params: { slug: guide.slug }, props: { guide } }));
+}
+const { guide } = Astro.props;
+const details = {
+  'why-cup-of-flour-weighs-different-amounts': {
+    heading: 'A simple flour comparison',
+    steps: ['Loosen the flour before measuring.', 'Spoon it into a dry cup and level the top.', 'For comparison, fill a second cup by scooping directly from the bag; the second amount may weigh more.', 'Use the recipe’s gram amount if one is provided.'],
+    related: ['/all-purpose-flour/', '/bread-flour/']
+  },
+  'how-to-measure-flour': {
+    heading: 'Spoon-and-level checklist',
+    steps: ['Fluff the flour with a spoon.', 'Add flour to the measuring cup in small spoonfuls.', 'Sweep a straight edge across the rim without pressing the flour.', 'Avoid tapping or shaking the cup to make room for more.'],
+    related: ['/all-purpose-flour/', '/category/flour/']
+  },
+  'grams-vs-cups': {
+    heading: 'Which unit should you choose?',
+    steps: ['Use grams when the recipe lists a weight.', 'If the recipe only gives cups, identify the exact ingredient first.', 'Check whether the recipe expects a packed, sifted, or level measure.', 'Use the same unit system throughout the recipe to reduce conversion errors.'],
+    related: ['/ingredients/', '/cheat-sheet/']
+  },
+  'packed-vs-loose-brown-sugar': {
+    heading: 'How to pack brown sugar',
+    steps: ['Check whether the recipe says packed or firmly packed.', 'Press the sugar into the cup in small additions if packing is required.', 'Level the top and follow the recipe’s wording consistently.', 'If the recipe provides grams, weigh the sugar instead of guessing how firmly to pack it.'],
+    related: ['/brown-sugar/', '/category/sugar/']
+  },
+  'us-metric-uk-cups': {
+    heading: 'Check the recipe’s measuring system',
+    steps: ['Look for the recipe’s country or stated cup size.', 'A US customary cup is about 236.6 ml; a metric cup is commonly 250 ml.', 'Australian tablespoons are commonly 20 ml, unlike US tablespoons at about 14.8 ml.', 'Select the matching system in the calculator and remember that grams still depend on the ingredient.'],
+    related: ['/ingredients/', '/methodology/']
+  },
+  'tablespoons-in-a-cup': {
+    heading: 'Volume relationships to remember',
+    steps: ['In US customary measures, 1 cup equals 16 tablespoons.', 'One US tablespoon equals 3 US teaspoons.', 'These are volume relationships, not universal gram weights.', 'To convert to grams, select the ingredient and use its own reference weight.'],
+    related: ['/all-purpose-flour/cup-to-grams/', '/ingredients/']
+  },
+  'butter-conversions': {
+    heading: 'Quick butter measuring steps',
+    steps: ['Check the package for tablespoon or cup markings.', 'One standard US stick is commonly 1/2 cup or about 113 g.', 'A US cup of butter is commonly about 227 g.', 'Follow the recipe’s instruction for solid or melted butter.'],
+    related: ['/butter/', '/category/dairy/']
+  },
+  'liquids-ml-grams': {
+    heading: 'Volume is not the same as mass',
+    steps: ['Use milliliters when a recipe specifies liquid volume.', 'Use grams when the recipe gives mass or when you weigh the liquid.', 'Water is close to 1 g per ml, but oils, milk, honey, and syrups differ.', 'Check the exact liquid and its source status before using a conversion.'],
+    related: ['/milk/', '/honey/']
+  },
+  'sifted-vs-unsifted-flour': {
+    heading: 'Read the recipe wording carefully',
+    steps: ['“1 cup sifted flour” usually means sift first, then measure.', '“1 cup flour, sifted” can mean measure first, then sift.', 'Sifting changes the volume and amount that fits in a cup.', 'When the wording is ambiguous, follow the recipe source’s notes or weigh the flour.'],
+    related: ['/all-purpose-flour/', '/cake-flour/']
+  },
+  'kitchen-scale-calibration': {
+    heading: 'A repeatable weighing routine',
+    steps: ['Put the scale on a firm, level surface.', 'Turn it on and wait for the display to settle at zero.', 'Place the bowl on the scale and use tare before adding ingredients.', 'Follow the manufacturer’s instructions for calibration; not all scales support user calibration.'],
+    related: ['/methodology/', '/cheat-sheet/']
+  },
+  'baking-powder-soda': {
+    heading: 'Measure leaveners carefully',
+    steps: ['Read the ingredient name twice before measuring.', 'Use a level measuring spoon rather than a heaped spoon.', 'Do not substitute baking soda and baking powder in equal amounts.', 'Use the recipe’s specified quantity because small changes can affect rise and taste.'],
+    related: ['/category/baking/', '/methodology/']
+  },
+  'common-conversion-mistakes': {
+    heading: 'A four-point check before converting',
+    steps: ['Confirm the exact ingredient and its form.', 'Confirm the recipe’s cup and spoon system.', 'Match the preparation method, such as packed, sifted, dry, or cooked.', 'Check the ingredient’s verification note and prefer grams when precision matters.'],
+    related: ['/ingredients/', '/methodology/']
+  }
+};
+const detail = details[guide.slug] ?? {
+  heading: 'Apply the method in your kitchen',
+  steps: ['Confirm the exact ingredient and preparation.', 'Choose the measuring system used by the recipe.', 'Follow the ingredient page’s measuring instructions.', 'Use a kitchen scale when the recipe provides gram weights.'],
+  related: ['/ingredients/', '/methodology/']
+};
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: absolute('/') },
+    { '@type': 'ListItem', position: 2, name: 'Guides', item: absolute('/guides/') },
+    { '@type': 'ListItem', position: 3, name: guide.title, item: absolute(`/guides/${guide.slug}/`) }
+  ]
+};
 ---
-<Base title={`${guide.title} | CupToGram`} description={guide.description.slice(0,150)} path={`/guides/${guide.slug}/`}><main class="wrap"><article class="content"><div class="breadcrumbs"><a href="/">Home</a> / <a href="/guides/">Guides</a> / {guide.title}</div><span class="eyebrow">Baking guide</span><h1>{guide.title}</h1><p class="lede">{guide.description}</p><p>{guide.body}</p><h2>Practical takeaway</h2><p>Use the measuring method specified in your recipe, choose the correct regional unit system, and use a kitchen scale when precision matters. Conversion values are estimates and can vary with ingredient brand and preparation.</p><p class="small muted">Editorial note: this introductory guide should be reviewed and expanded with reliable sources before launch as a final reference article.</p><a href="/methodology/">Read our measurement methodology →</a></article></main></Base>
+<Base title={`${guide.title} | CupToGram`} description={guide.description.slice(0, 155)} path={`/guides/${guide.slug}/`} schema={breadcrumbSchema}>
+  <main class="wrap">
+    <article class="content">
+      <Breadcrumbs items={[{ label: 'Guides', href: '/guides/' }, { label: guide.title }]} />
+      <span class="eyebrow">Practical baking guide</span>
+      <h1>{guide.title}</h1>
+      <p class="lede">{guide.description}</p>
+      <p>{guide.body}</p>
+      <h2>{detail.heading}</h2>
+      <ol>{detail.steps.map((step) => <li>{step}</li>)}</ol>
+      <h2>Use this with a real ingredient</h2>
+      <p>Conversion factors depend on the ingredient, not just the measuring unit. Open the matching ingredient page to see the reference weight, preparation method, and whether the value has been source-checked.</p>
+      <p>{detail.related.map((url, index) => <span>{index > 0 && ' · '}<a href={url}>{url === '/ingredients/' ? 'Browse all ingredients' : url === '/methodology/' ? 'Measurement methodology' : url === '/cheat-sheet/' ? 'Printable cheat sheet' : url === '/category/flour/' ? 'Flour conversions' : url === '/category/sugar/' ? 'Sugar conversions' : url === '/category/dairy/' ? 'Dairy conversions' : url === '/category/baking/' ? 'Baking conversions' : url.split('/').filter(Boolean).at(-1).replaceAll('-', ' ')}</a></span>)}</p>
+      <div class="callout"><strong>Remember:</strong> a volume conversion is an estimate. When your recipe provides a gram weight, use that weight for the most repeatable result.</div>
+      <p><a href="/guides/">← Browse all measurement guides</a> · <a href="/methodology/">How we choose reference values</a></p>
+    </article>
+  </main>
+</Base>
