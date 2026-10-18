@@ -387,5 +387,715 @@
       "all-purpose-flour",
       "powdered-sugar"
     ]
+  },
+  {
+    "slug": "cake-flour",
+    "name": "Cake Flour",
+    "category": "flour",
+    "gPerCup": 114,
+    "method": "spooned and leveled",
+    "aliases": [
+      "soft wheat flour"
+    ],
+    "status": "draft",
+    "verified": false,
+    "range": [
+      103,
+      125
+    ],
+    "note": "Cake flour is finely milled and often used for tender cakes. Its weight per cup depends on how it settles and whether it is sifted before measuring. Until this entry is verified against a consistent reference, use the gram value as a provisional estimate and weigh the flour when the recipe is sensitive to texture.",
+    "faq": [
+      {
+        "q": "Why can cake flour weigh differently by cup?",
+        "a": "Particle size, moisture, brand, and measuring technique can change the amount in a cup."
+      },
+      {
+        "q": "Should I use this value as an exact measurement?",
+        "a": "No. This draft value needs source verification; weigh the ingredient when accuracy matters."
+      }
+    ],
+    "related": [
+      "all-purpose-flour",
+      "bread-flour",
+      "granulated-sugar"
+    ]
+  },
+  {
+    "slug": "whole-wheat-flour",
+    "name": "Whole Wheat Flour",
+    "category": "flour",
+    "gPerCup": 120,
+    "method": "spooned and leveled",
+    "aliases": [
+      "wholemeal flour"
+    ],
+    "status": "draft",
+    "verified": false,
+    "range": [
+      108,
+      132
+    ],
+    "note": "Whole wheat flour contains bran and germ, which affect its texture and how it settles in a measuring cup. Loosen the flour, spoon it gently into the cup, and level without pressing. Brand and grind can change the weight, so treat this value as provisional until source-checked.",
+    "faq": [
+      {
+        "q": "Why can whole wheat flour weigh differently by cup?",
+        "a": "Particle size, moisture, brand, and measuring technique can change the amount in a cup."
+      },
+      {
+        "q": "Should I use this value as an exact measurement?",
+        "a": "No. This draft value needs source verification; weigh the ingredient when accuracy matters."
+      }
+    ],
+    "related": [
+      "all-purpose-flour",
+      "bread-flour",
+      "granulated-sugar"
+    ]
+  },
+  {
+    "slug": "almond-flour",
+    "name": "Almond Flour",
+    "category": "flour",
+    "gPerCup": 96,
+    "method": "spooned and leveled",
+    "aliases": [
+      "ground almonds"
+    ],
+    "status": "draft",
+    "verified": false,
+    "range": [
+      86,
+      106
+    ],
+    "note": "Almond flour is made from ground almonds and may vary in particle size, fat content, and packing density. Spoon it into a cup rather than compressing it. Finely ground almond flour and coarser meal may not weigh the same, so use a recipe-specific weight whenever possible.",
+    "faq": [
+      {
+        "q": "Why can almond flour weigh differently by cup?",
+        "a": "Particle size, moisture, brand, and measuring technique can change the amount in a cup."
+      },
+      {
+        "q": "Should I use this value as an exact measurement?",
+        "a": "No. This draft value needs source verification; weigh the ingredient when accuracy matters."
+      }
+    ],
+    "related": [
+      "all-purpose-flour",
+      "bread-flour",
+      "granulated-sugar"
+    ]
+  },
+  {
+    "slug": "cornmeal",
+    "name": "Cornmeal",
+    "category": "grains",
+    "gPerCup": 156,
+    "method": "level",
+    "aliases": [
+      "maize meal"
+    ],
+    "status": "draft",
+    "verified": false,
+    "range": [
+      140,
+      172
+    ],
+    "note": "Cornmeal is ground dried corn, and its weight per cup varies with grind size and how tightly the particles settle. Fill the cup loosely and level the surface. Fine, medium, and coarse cornmeal can behave differently, so this reference should be checked against the type named in the recipe.",
+    "faq": [
+      {
+        "q": "Why can cornmeal weigh differently by cup?",
+        "a": "Particle size, moisture, brand, and measuring technique can change the amount in a cup."
+      },
+      {
+        "q": "Should I use this value as an exact measurement?",
+        "a": "No. This draft value needs source verification; weigh the ingredient when accuracy matters."
+      }
+    ],
+    "related": [
+      "all-purpose-flour",
+      "bread-flour",
+      "granulated-sugar"
+    ]
+  },
+  {
+    "slug": "maple-syrup",
+    "name": "Maple Syrup",
+    "category": "sweeteners",
+    "gPerCup": 322,
+    "method": "level",
+    "aliases": [
+      "pure maple syrup"
+    ],
+    "status": "draft",
+    "verified": false,
+    "range": [
+      290,
+      354
+    ],
+    "note": "Maple syrup is denser than water and should not use a water-based grams-per-cup conversion. Its density and flow can change with temperature and product grade. Measure in a liquid jug or weigh directly, and treat the listed cup weight as a provisional reference until it is checked.",
+    "faq": [
+      {
+        "q": "Why can maple syrup weigh differently by cup?",
+        "a": "Particle size, moisture, brand, and measuring technique can change the amount in a cup."
+      },
+      {
+        "q": "Should I use this value as an exact measurement?",
+        "a": "No. This draft value needs source verification; weigh the ingredient when accuracy matters."
+      }
+    ],
+    "related": [
+      "all-purpose-flour",
+      "bread-flour",
+      "granulated-sugar"
+    ]
+  },
+  {
+    "slug": "vegetable-oil",
+    "name": "Vegetable Oil",
+    "category": "oils",
+    "gPerCup": 218,
+    "method": "liquid measuring cup",
+    "aliases": [
+      "cooking oil"
+    ],
+    "status": "draft",
+    "verified": false,
+    "range": [
+      196,
+      240
+    ],
+    "note": "Vegetable oil is less dense than water, so milliliters and grams are not numerically interchangeable. Use a liquid measuring jug on a level surface or weigh the oil on a scale. Different oil blends can have slightly different densities, making this value a practical estimate rather than an exact constant.",
+    "faq": [
+      {
+        "q": "Why can vegetable oil weigh differently by cup?",
+        "a": "Particle size, moisture, brand, and measuring technique can change the amount in a cup."
+      },
+      {
+        "q": "Should I use this value as an exact measurement?",
+        "a": "No. This draft value needs source verification; weigh the ingredient when accuracy matters."
+      }
+    ],
+    "related": [
+      "all-purpose-flour",
+      "bread-flour",
+      "granulated-sugar"
+    ]
+  },
+  {
+    "slug": "olive-oil",
+    "name": "Olive Oil",
+    "category": "oils",
+    "gPerCup": 216,
+    "method": "liquid measuring cup",
+    "aliases": [
+      "extra virgin olive oil"
+    ],
+    "status": "draft",
+    "verified": false,
+    "range": [
+      194,
+      238
+    ],
+    "note": "Olive oil density varies slightly with temperature and composition. For volume, read a liquid measuring jug at eye level; for weight, use a scale. This reference value is an estimate and should not be treated as interchangeable with water or other cooking oils.",
+    "faq": [
+      {
+        "q": "Why can olive oil weigh differently by cup?",
+        "a": "Particle size, moisture, brand, and measuring technique can change the amount in a cup."
+      },
+      {
+        "q": "Should I use this value as an exact measurement?",
+        "a": "No. This draft value needs source verification; weigh the ingredient when accuracy matters."
+      }
+    ],
+    "related": [
+      "all-purpose-flour",
+      "bread-flour",
+      "granulated-sugar"
+    ]
+  },
+  {
+    "slug": "peanut-butter",
+    "name": "Peanut Butter",
+    "category": "spreads",
+    "gPerCup": 258,
+    "method": "level",
+    "aliases": [
+      "smooth peanut butter",
+      "crunchy peanut butter"
+    ],
+    "status": "draft",
+    "verified": false,
+    "range": [
+      232,
+      284
+    ],
+    "note": "Peanut butter is thick and can trap air pockets or stick to measuring tools. Fill the cup evenly and level it according to the recipe. Smooth and crunchy varieties, as well as natural products with separated oil, can differ in density, so weighing is the most consistent method.",
+    "faq": [
+      {
+        "q": "Why can peanut butter weigh differently by cup?",
+        "a": "Particle size, moisture, brand, and measuring technique can change the amount in a cup."
+      },
+      {
+        "q": "Should I use this value as an exact measurement?",
+        "a": "No. This draft value needs source verification; weigh the ingredient when accuracy matters."
+      }
+    ],
+    "related": [
+      "all-purpose-flour",
+      "bread-flour",
+      "granulated-sugar"
+    ]
+  },
+  {
+    "slug": "cream-cheese",
+    "name": "Cream Cheese",
+    "category": "dairy",
+    "gPerCup": 227,
+    "method": "softened and packed",
+    "aliases": [
+      "soft cheese"
+    ],
+    "status": "draft",
+    "verified": false,
+    "range": [
+      204,
+      250
+    ],
+    "note": "Cream cheese is dense and may hold air when whipped or softened. A packed cup is not equivalent to a loosely filled cup of whipped cream cheese. Follow the recipe's preparation instructions and use a scale when accuracy matters; this cup weight is a provisional estimate for the specified form.",
+    "faq": [
+      {
+        "q": "Why can cream cheese weigh differently by cup?",
+        "a": "Particle size, moisture, brand, and measuring technique can change the amount in a cup."
+      },
+      {
+        "q": "Should I use this value as an exact measurement?",
+        "a": "No. This draft value needs source verification; weigh the ingredient when accuracy matters."
+      }
+    ],
+    "related": [
+      "all-purpose-flour",
+      "bread-flour",
+      "granulated-sugar"
+    ]
+  },
+  {
+    "slug": "heavy-cream",
+    "name": "Heavy Cream",
+    "category": "dairy",
+    "gPerCup": 238,
+    "method": "liquid measuring cup",
+    "aliases": [
+      "heavy whipping cream",
+      "double cream"
+    ],
+    "status": "draft",
+    "verified": false,
+    "range": [
+      214,
+      262
+    ],
+    "note": "Heavy cream is a pourable dairy liquid, but names and fat content differ by country. Use a liquid measuring jug for volume or a scale for weight. Do not assume that a milliliter always equals a gram, and check the product label when substituting regional cream types.",
+    "faq": [
+      {
+        "q": "Why can heavy cream weigh differently by cup?",
+        "a": "Particle size, moisture, brand, and measuring technique can change the amount in a cup."
+      },
+      {
+        "q": "Should I use this value as an exact measurement?",
+        "a": "No. This draft value needs source verification; weigh the ingredient when accuracy matters."
+      }
+    ],
+    "related": [
+      "all-purpose-flour",
+      "bread-flour",
+      "granulated-sugar"
+    ]
+  },
+  {
+    "slug": "yogurt",
+    "name": "Yogurt",
+    "category": "dairy",
+    "gPerCup": 245,
+    "method": "level",
+    "aliases": [
+      "plain yogurt",
+      "plain yoghurt"
+    ],
+    "status": "draft",
+    "verified": false,
+    "range": [
+      221,
+      270
+    ],
+    "note": "Yogurt thickness, fat content, and whey separation can change how it settles in a measuring cup. Stir it gently if the recipe calls for a uniform texture, then fill and level the cup. Greek-style yogurt is often thicker and may not match this provisional value.",
+    "faq": [
+      {
+        "q": "Why can yogurt weigh differently by cup?",
+        "a": "Particle size, moisture, brand, and measuring technique can change the amount in a cup."
+      },
+      {
+        "q": "Should I use this value as an exact measurement?",
+        "a": "No. This draft value needs source verification; weigh the ingredient when accuracy matters."
+      }
+    ],
+    "related": [
+      "all-purpose-flour",
+      "bread-flour",
+      "granulated-sugar"
+    ]
+  },
+  {
+    "slug": "sour-cream",
+    "name": "Sour Cream",
+    "category": "dairy",
+    "gPerCup": 230,
+    "method": "level",
+    "aliases": [
+      "cultured sour cream"
+    ],
+    "status": "draft",
+    "verified": false,
+    "range": [
+      207,
+      253
+    ],
+    "note": "Sour cream is thick enough to leave air gaps when spooned into a cup. Fill it evenly and level the surface without pressing hard. Fat percentage and regional formulations vary, so use this value as an estimate and weigh the amount when the recipe requires precision.",
+    "faq": [
+      {
+        "q": "Why can sour cream weigh differently by cup?",
+        "a": "Particle size, moisture, brand, and measuring technique can change the amount in a cup."
+      },
+      {
+        "q": "Should I use this value as an exact measurement?",
+        "a": "No. This draft value needs source verification; weigh the ingredient when accuracy matters."
+      }
+    ],
+    "related": [
+      "all-purpose-flour",
+      "bread-flour",
+      "granulated-sugar"
+    ]
+  },
+  {
+    "slug": "water",
+    "name": "Water",
+    "category": "liquids",
+    "gPerCup": 237,
+    "method": "liquid measuring cup",
+    "aliases": [
+      "tap water",
+      "filtered water"
+    ],
+    "status": "draft",
+    "verified": false,
+    "range": [
+      213,
+      261
+    ],
+    "note": "Water is close to one gram per milliliter under ordinary kitchen conditions, but a US cup is about 236.6 milliliters rather than exactly 250 milliliters. Read the liquid measure at eye level. Temperature changes density slightly, although the difference is small for everyday cooking.",
+    "faq": [
+      {
+        "q": "Why can water weigh differently by cup?",
+        "a": "Particle size, moisture, brand, and measuring technique can change the amount in a cup."
+      },
+      {
+        "q": "Should I use this value as an exact measurement?",
+        "a": "No. This draft value needs source verification; weigh the ingredient when accuracy matters."
+      }
+    ],
+    "related": [
+      "all-purpose-flour",
+      "bread-flour",
+      "granulated-sugar"
+    ]
+  },
+  {
+    "slug": "table-salt",
+    "name": "Table Salt",
+    "category": "seasonings",
+    "gPerCup": 288,
+    "method": "level",
+    "aliases": [
+      "fine salt",
+      "iodized salt"
+    ],
+    "status": "draft",
+    "verified": false,
+    "range": [
+      259,
+      317
+    ],
+    "note": "Salt is especially sensitive to crystal size: fine table salt packs much more tightly by volume than coarse kosher or flaky salt. This value applies only as a provisional estimate for fine table salt. Always check the recipe's salt type, since equal volumes of different salts can taste very different.",
+    "faq": [
+      {
+        "q": "Why can table salt weigh differently by cup?",
+        "a": "Particle size, moisture, brand, and measuring technique can change the amount in a cup."
+      },
+      {
+        "q": "Should I use this value as an exact measurement?",
+        "a": "No. This draft value needs source verification; weigh the ingredient when accuracy matters."
+      }
+    ],
+    "related": [
+      "all-purpose-flour",
+      "bread-flour",
+      "granulated-sugar"
+    ]
+  },
+  {
+    "slug": "baking-powder",
+    "name": "Baking Powder",
+    "category": "baking",
+    "gPerCup": 192,
+    "method": "level",
+    "aliases": [
+      "double-acting baking powder"
+    ],
+    "status": "draft",
+    "verified": false,
+    "range": [
+      173,
+      211
+    ],
+    "note": "Baking powder is a fine leavener used in measured quantities, and its bulk density can vary with brand and settling. Use a dry measuring spoon, level it without packing, and avoid confusing it with baking soda. For best results, follow the recipe's exact ingredient and amount.",
+    "faq": [
+      {
+        "q": "Why can baking powder weigh differently by cup?",
+        "a": "Particle size, moisture, brand, and measuring technique can change the amount in a cup."
+      },
+      {
+        "q": "Should I use this value as an exact measurement?",
+        "a": "No. This draft value needs source verification; weigh the ingredient when accuracy matters."
+      }
+    ],
+    "related": [
+      "all-purpose-flour",
+      "bread-flour",
+      "granulated-sugar"
+    ]
+  },
+  {
+    "slug": "baking-soda",
+    "name": "Baking Soda",
+    "category": "baking",
+    "gPerCup": 220,
+    "method": "level",
+    "aliases": [
+      "bicarbonate of soda",
+      "sodium bicarbonate"
+    ],
+    "status": "draft",
+    "verified": false,
+    "range": [
+      198,
+      242
+    ],
+    "note": "Baking soda is a concentrated leavener and is not interchangeable with baking powder in equal amounts. Measure it with a level spoon without packing. Brand, humidity, and settling may change cup weight, and small errors can affect flavor, browning, and rise.",
+    "faq": [
+      {
+        "q": "Why can baking soda weigh differently by cup?",
+        "a": "Particle size, moisture, brand, and measuring technique can change the amount in a cup."
+      },
+      {
+        "q": "Should I use this value as an exact measurement?",
+        "a": "No. This draft value needs source verification; weigh the ingredient when accuracy matters."
+      }
+    ],
+    "related": [
+      "all-purpose-flour",
+      "bread-flour",
+      "granulated-sugar"
+    ]
+  },
+  {
+    "slug": "chocolate-chips",
+    "name": "Chocolate Chips",
+    "category": "baking",
+    "gPerCup": 170,
+    "method": "level",
+    "aliases": [
+      "chocolate morsels"
+    ],
+    "status": "draft",
+    "verified": false,
+    "range": [
+      153,
+      187
+    ],
+    "note": "Chocolate chips leave air spaces between pieces, so a cup's weight depends on chip size, shape, and how the cup is filled. Pour them in without crushing or compressing them, then level the top. Mini chips and large chunks should not be assumed to share this value.",
+    "faq": [
+      {
+        "q": "Why can chocolate chips weigh differently by cup?",
+        "a": "Particle size, moisture, brand, and measuring technique can change the amount in a cup."
+      },
+      {
+        "q": "Should I use this value as an exact measurement?",
+        "a": "No. This draft value needs source verification; weigh the ingredient when accuracy matters."
+      }
+    ],
+    "related": [
+      "all-purpose-flour",
+      "bread-flour",
+      "granulated-sugar"
+    ]
+  },
+  {
+    "slug": "chopped-walnuts",
+    "name": "Chopped Walnuts",
+    "category": "nuts",
+    "gPerCup": 120,
+    "method": "level",
+    "aliases": [
+      "walnut pieces"
+    ],
+    "status": "draft",
+    "verified": false,
+    "range": [
+      108,
+      132
+    ],
+    "note": "Chopped walnuts have irregular shapes that leave variable air gaps in a cup. The finer the chop, the more pieces may fit into the same volume. Fill the cup loosely and level it; use a scale when the recipe depends on a precise nut-to-dough ratio.",
+    "faq": [
+      {
+        "q": "Why can chopped walnuts weigh differently by cup?",
+        "a": "Particle size, moisture, brand, and measuring technique can change the amount in a cup."
+      },
+      {
+        "q": "Should I use this value as an exact measurement?",
+        "a": "No. This draft value needs source verification; weigh the ingredient when accuracy matters."
+      }
+    ],
+    "related": [
+      "all-purpose-flour",
+      "bread-flour",
+      "granulated-sugar"
+    ]
+  },
+  {
+    "slug": "raisins",
+    "name": "Raisins",
+    "category": "dried-fruit",
+    "gPerCup": 150,
+    "method": "level",
+    "aliases": [
+      "dried grapes"
+    ],
+    "status": "draft",
+    "verified": false,
+    "range": [
+      135,
+      165
+    ],
+    "note": "Raisins vary in size, moisture, and stickiness, which can change how they settle in a cup. Fill the measure loosely and avoid compressing them. Very large or unusually dry raisins may differ from this provisional value, so weighing is helpful for consistent baking.",
+    "faq": [
+      {
+        "q": "Why can raisins weigh differently by cup?",
+        "a": "Particle size, moisture, brand, and measuring technique can change the amount in a cup."
+      },
+      {
+        "q": "Should I use this value as an exact measurement?",
+        "a": "No. This draft value needs source verification; weigh the ingredient when accuracy matters."
+      }
+    ],
+    "related": [
+      "all-purpose-flour",
+      "bread-flour",
+      "granulated-sugar"
+    ]
+  },
+  {
+    "slug": "shredded-cheddar",
+    "name": "Shredded Cheddar",
+    "category": "dairy",
+    "gPerCup": 113,
+    "method": "loosely packed",
+    "aliases": [
+      "grated cheddar"
+    ],
+    "status": "draft",
+    "verified": false,
+    "range": [
+      102,
+      124
+    ],
+    "note": "Shredded cheddar has irregular strands and air spaces, so weight depends on shred size and whether the cheese is packed into the cup. This reference assumes a loose fill. Finely grated cheese or firmly packed shreds can weigh more, so follow the recipe's stated method.",
+    "faq": [
+      {
+        "q": "Why can shredded cheddar weigh differently by cup?",
+        "a": "Particle size, moisture, brand, and measuring technique can change the amount in a cup."
+      },
+      {
+        "q": "Should I use this value as an exact measurement?",
+        "a": "No. This draft value needs source verification; weigh the ingredient when accuracy matters."
+      }
+    ],
+    "related": [
+      "all-purpose-flour",
+      "bread-flour",
+      "granulated-sugar"
+    ]
+  },
+  {
+    "slug": "breadcrumbs",
+    "name": "Dry Breadcrumbs",
+    "category": "baking",
+    "gPerCup": 108,
+    "method": "level",
+    "aliases": [
+      "plain dry breadcrumbs"
+    ],
+    "status": "draft",
+    "verified": false,
+    "range": [
+      97,
+      119
+    ],
+    "note": "Dry breadcrumbs can range from fine crumbs to coarse flakes, and particle size changes how much fits in a cup. Pour them in loosely and level the surface without pressing. Fresh breadcrumbs contain more moisture and should not use this dry breadcrumb reference.",
+    "faq": [
+      {
+        "q": "Why can dry breadcrumbs weigh differently by cup?",
+        "a": "Particle size, moisture, brand, and measuring technique can change the amount in a cup."
+      },
+      {
+        "q": "Should I use this value as an exact measurement?",
+        "a": "No. This draft value needs source verification; weigh the ingredient when accuracy matters."
+      }
+    ],
+    "related": [
+      "all-purpose-flour",
+      "bread-flour",
+      "granulated-sugar"
+    ]
+  },
+  {
+    "slug": "mashed-banana",
+    "name": "Mashed Banana",
+    "category": "fruit",
+    "gPerCup": 225,
+    "method": "level",
+    "aliases": [
+      "mashed ripe banana"
+    ],
+    "status": "draft",
+    "verified": false,
+    "range": [
+      203,
+      248
+    ],
+    "note": "Mashed banana density changes with ripeness, texture, and how much air is mixed in while mashing. Mash until the texture described in the recipe, then measure without whipping or packing. For baking consistency, weighing the mashed fruit is more reliable than relying on cup volume.",
+    "faq": [
+      {
+        "q": "Why can mashed banana weigh differently by cup?",
+        "a": "Particle size, moisture, brand, and measuring technique can change the amount in a cup."
+      },
+      {
+        "q": "Should I use this value as an exact measurement?",
+        "a": "No. This draft value needs source verification; weigh the ingredient when accuracy matters."
+      }
+    ],
+    "related": [
+      "all-purpose-flour",
+      "bread-flour",
+      "granulated-sugar"
+    ]
   }
 ]
