@@ -59,3 +59,7 @@
 .hero h1 .hero-title-main{font-size:1em!important}
 .hero h1 .hero-title-sub{display:inline-block!important;font-size:clamp(1.55rem,4.4vw,3.1rem)!important;line-height:1.15!important;font-weight:650!important;color:var(--muted)!important}
 @media(max-width:480px){.hero h1 .hero-title-sub{font-size:clamp(1.45rem,7.2vw,2.05rem)!important}}
+
+/* Slightly reduce the supporting headline by a further 3pt */
+.hero h1 .hero-title-sub{font-size:calc(clamp(1.55rem,4.4vw,3.1rem) - 3pt)!important}
+@media(max-width:480px){.hero h1 .hero-title-sub{font-size:calc(clamp(1.45rem,7.2vw,2.05rem) - 3pt)!important}}
