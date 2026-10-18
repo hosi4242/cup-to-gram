@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 Disallow: /search-index.json
-Sitemap: https://cup-to-gram.toolmingle.dev/sitemap-index.xml
+Sitemap: https://cup-to-gram.hosi4242.workers.dev/sitemap-index.xml
