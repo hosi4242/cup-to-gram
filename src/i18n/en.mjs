@@ -1,0 +1,1 @@
+export const en={siteName:'CupToGram',tagline:'Practical ingredient conversions for better baking',home:'Home',ingredients:'Ingredients',tools:'Tools',guides:'Guides',about:'About',methodology:'Methodology',privacy:'Privacy',contact:'Contact'};

@@ -1,0 +1,4 @@
+---
+const {ingredient}=Astro.props;
+---
+<a class="card" style="display:block;text-decoration:none;color:inherit" href={`/${ingredient.slug}/`}><span class="pill">{ingredient.category}</span><h3 style="margin-top:.7rem">{ingredient.name}</h3><p>1 US cup ≈ <strong>{ingredient.gPerCup} g</strong></p><p class="small">Measured {ingredient.method}</p></a>

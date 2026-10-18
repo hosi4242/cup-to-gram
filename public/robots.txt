@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /search-index.json
+Sitemap: https://cup-to-gram.pages.dev/sitemap-index.xml
