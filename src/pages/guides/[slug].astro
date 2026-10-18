@@ -70,6 +70,22 @@ const details = {
     related: ['/ingredients/', '/methodology/']
   }
 };
+const linkLabels = {
+  '/ingredients/': 'Browse all ingredients',
+  '/methodology/': 'Measurement methodology',
+  '/cheat-sheet/': 'Printable cheat sheet',
+  '/category/flour/': 'Flour conversions',
+  '/category/sugar/': 'Sugar conversions',
+  '/category/dairy/': 'Dairy conversions',
+  '/category/baking/': 'Baking conversions',
+  '/all-purpose-flour/': 'All-purpose flour conversion',
+  '/bread-flour/': 'Bread flour conversion',
+  '/brown-sugar/': 'Brown sugar conversion',
+  '/butter/': 'Butter conversion',
+  '/milk/': 'Milk conversion',
+  '/honey/': 'Honey conversion',
+  '/all-purpose-flour/cup-to-grams/': 'All-purpose flour cups to grams'
+};
 const detail = details[guide.slug] ?? {
   heading: 'Apply the method in your kitchen',
   steps: ['Confirm the exact ingredient and preparation.', 'Choose the measuring system used by the recipe.', 'Follow the ingredient page’s measuring instructions.', 'Use a kitchen scale when the recipe provides gram weights.'],
@@ -97,7 +113,7 @@ const breadcrumbSchema = {
       <ol>{detail.steps.map((step) => <li>{step}</li>)}</ol>
       <h2>Use this with a real ingredient</h2>
       <p>Conversion factors depend on the ingredient, not just the measuring unit. Open the matching ingredient page to see the reference weight, preparation method, and whether the value has been source-checked.</p>
-      <p>{detail.related.map((url, index) => <span>{index > 0 && ' · '}<a href={url}>{url === '/ingredients/' ? 'Browse all ingredients' : url === '/methodology/' ? 'Measurement methodology' : url === '/cheat-sheet/' ? 'Printable cheat sheet' : url === '/category/flour/' ? 'Flour conversions' : url === '/category/sugar/' ? 'Sugar conversions' : url === '/category/dairy/' ? 'Dairy conversions' : url === '/category/baking/' ? 'Baking conversions' : url.split('/').filter(Boolean).at(-1).replaceAll('-', ' ')}</a></span>)}</p>
+      <p>{detail.related.map((url, index) => <span>{index > 0 && ' · '}<a href={url}>{linkLabels[url] ?? 'Related ingredient guide'}</a></span>)}</p>
       <div class="callout"><strong>Remember:</strong> a volume conversion is an estimate. When your recipe provides a gram weight, use that weight for the most repeatable result.</div>
       <p><a href="/guides/">← Browse all measurement guides</a> · <a href="/methodology/">How we choose reference values</a></p>
     </article>
