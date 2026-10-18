@@ -1,1 +1,1 @@
-export function formatAmount(n,digits=2){if(!Number.isFinite(n))return'—';return new Intl.NumberFormat('en-US',{maximumFractionDigits:digits}).format(n);}
+/** @param {number} n @param {number} [digits] */ export function formatAmount(n,digits=2){if(!Number.isFinite(n))return'—';return new Intl.NumberFormat('en-US',{maximumFractionDigits:digits}).format(n);}

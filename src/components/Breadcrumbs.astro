@@ -1,4 +1,5 @@
 ---
+/** @type {{items?: {label:string,href?:string}[]}} */
 const {items=[]}=Astro.props;
 ---
 <div class="breadcrumbs"><a href="/">Home</a>{items.map(item=><> / {item.href?<a href={item.href}>{item.label}</a>:<span>{item.label}</span>}</>)}</div>
