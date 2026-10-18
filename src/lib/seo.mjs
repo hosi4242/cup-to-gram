@@ -1,1 +1,1 @@
-export const SITE_NAME='CupToGram';export const SITE_URL=(import.meta.env?.PUBLIC_SITE_URL||'https://cup-to-gram.pages.dev').replace(/\/$/,'');export function absolute(path='/'){return new URL(path,SITE_URL+'/').toString();}
+export const SITE_NAME='CupToGram';export const SITE_URL=(import.meta.env?.PUBLIC_SITE_URL||'https://cup-to-gram.toolmingle.dev').replace(/\/$/,'');export function absolute(path='/'){return new URL(path,SITE_URL+'/').toString();}
