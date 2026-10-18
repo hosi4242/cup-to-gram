@@ -5,7 +5,7 @@ on:
   pull_request:
     branches: [main]
 permissions:
-  contents: read
+  contents: write
 jobs:
   verify:
     runs-on: ubuntu-latest
@@ -18,5 +18,14 @@ jobs:
           node-version: 22
       - name: Install dependencies
         run: npm install
+      - name: Commit generated lockfile if missing
+        run: |
+          if [ ! -f package-lock.json ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add package-lock.json
+            git commit -m "chore: lock npm dependencies"
+            git push origin HEAD:main
+          fi
       - name: Run verification suite
         run: npm run verify
