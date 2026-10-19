@@ -17,8 +17,8 @@ const expectedPages = ingredients
   })));
 
 function getMeta(html, name) {
-  const tagPattern = new RegExp('<meta\\s+name=["\\']' + name + '["\\']\\s+content=["\\']([^"\\']*)["\\']\\s*\\/?>', 'i');
-  const reversedTagPattern = new RegExp('<meta\\s+content=["\\']([^"\\']*)["\\']\\s+name=["\\']' + name + '["\\']\\s*\\/?>', 'i');
+  const tagPattern = new RegExp("<meta\\s+name=[\"']" + name + "[\"']\\s+content=[\"']([^\"']*)[\"']\\s*/?>", 'i');
+  const reversedTagPattern = new RegExp("<meta\\s+content=[\"']([^\"']*)[\"']\\s+name=[\"']" + name + "[\"']\\s*/?>", 'i');
   const match = html.match(tagPattern) || html.match(reversedTagPattern);
   return match?.[1]?.trim() ?? '';
 }
@@ -28,7 +28,7 @@ function getTitle(html) {
 }
 
 function getCanonical(html) {
-  return html.match(new RegExp('<link\\s+rel=["\\']canonical["\\']\\s+href=["\\']([^"\\']+)["\\']\\s*\\/?>', 'i'))?.[1]?.trim() ?? '';
+  return html.match(new RegExp("<link\\s+rel=[\"']canonical[\"']\\s+href=[\"']([^\"']+)[\"']\\s*/?>", 'i'))?.[1]?.trim() ?? '';
 }
 
 if (!fs.existsSync(outputDir)) {
