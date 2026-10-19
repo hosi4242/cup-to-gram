@@ -17,17 +17,18 @@ const expectedPages = ingredients
   })));
 
 function getMeta(html, name) {
-  const match = html.match(new RegExp('<meta\\s+name=["\\']' + name + '["\\']\\s+content=["\\']([^"\\']*)["\\']\\s*\\/?>', 'i'))
-    || html.match(new RegExp('<meta\\s+content=["\\']([^"\\']*)["\\']\\s+name=["\\']' + name + '["\\']\\s*\\/?>', 'i'));
+  const tagPattern = new RegExp('<meta\\s+name=["\\']' + name + '["\\']\\s+content=["\\']([^"\\']*)["\\']\\s*\\/?>', 'i');
+  const reversedTagPattern = new RegExp('<meta\\s+content=["\\']([^"\\']*)["\\']\\s+name=["\\']' + name + '["\\']\\s*\\/?>', 'i');
+  const match = html.match(tagPattern) || html.match(reversedTagPattern);
   return match?.[1]?.trim() ?? '';
 }
 
 function getTitle(html) {
-  return html.match(/<title>([\\s\\S]*?)<\\/title>/i)?.[1]?.trim() ?? '';
+  return html.match(new RegExp('<title>([\\s\\S]*?)</title>', 'i'))?.[1]?.trim() ?? '';
 }
 
 function getCanonical(html) {
-  return html.match(/<link\\s+rel=["\\']canonical["\\']\\s+href=["\\']([^"\\']+)["\\']\\s*\\/?>/i)?.[1]?.trim() ?? '';
+  return html.match(new RegExp('<link\\s+rel=["\\']canonical["\\']\\s+href=["\\']([^"\\']+)["\\']\\s*\\/?>', 'i'))?.[1]?.trim() ?? '';
 }
 
 if (!fs.existsSync(outputDir)) {
@@ -50,7 +51,7 @@ for (const page of expectedPages) {
   const description = getMeta(html, 'description');
   const canonical = getCanonical(html);
   const expectedCanonical = new URL(page.route, siteUrl + '/').href;
-  const h1 = html.match(/<h1(?:\\s[^>]*)?>([\\s\\S]*?)<\\/h1>/i)?.[1]?.replace(/<[^>]+>/g, ' ').replace(/\\s+/g, ' ').trim() ?? '';
+  const h1 = html.match(new RegExp('<h1(?:\\s[^>]*)?>([\\s\\S]*?)</h1>', 'i'))?.[1]?.replace(new RegExp('<[^>]+>', 'g'), ' ').replace(new RegExp('\\s+', 'g'), ' ').trim() ?? '';
 
   if (!title) errors.push('Missing title: ' + page.route);
   if (!description) errors.push('Missing meta description: ' + page.route);
@@ -58,8 +59,8 @@ for (const page of expectedPages) {
   if (!canonical) errors.push('Missing canonical URL: ' + page.route);
   else if (canonical !== expectedCanonical) errors.push('Canonical mismatch on ' + page.route + ': expected ' + expectedCanonical + ', got ' + canonical);
   if (!h1) errors.push('Missing H1: ' + page.route);
-  if (!h1.toLowerCase().includes(page.route.split('/')[1].replace(/-/g, ' '))) {
-    // The ingredient name is validated via page content data by the unique title/description checks below.
+  if (!h1.toLowerCase().includes(page.ingredient.slug.replace(/-/g, ' ')) && !h1.toLowerCase().includes(page.ingredient.name.toLowerCase())) {
+    errors.push('H1 does not clearly identify ' + page.ingredient.name + ': ' + page.route);
   }
   if (!sitemap.includes('<loc>' + expectedCanonical + '</loc>')) errors.push('Conversion page missing from sitemap: ' + page.route);
 
