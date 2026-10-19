@@ -86,4 +86,5 @@ function update(){const parsedAmount=parseAmount(amount.value);amount.setAttribu
 document.querySelectorAll<HTMLButtonElement>('.quick-amount').forEach(button=>button.addEventListener('click',()=>{amount.value=button.dataset.amount ?? '1';update();amount.focus();}));
 update();
 </script>
+<style>#calc-amount[aria-invalid="true"]{border-color:#b42318;box-shadow:0 0 0 2px #b4231820}#calc-amount[aria-invalid="true"]:focus{outline-color:#b42318}</style>
 </Base>
